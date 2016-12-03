@@ -1,13 +1,10 @@
 /** this middleware check if user is registered. 
 * if not registered return an how to register procedure. */
-module.exports = function (req, res, next) {
-    var isRegistered = isRegistered();
-    if(isRegistered){
+module.exports = isRegistered
+
+function isRegistered(req, res, next) {
+    console.log("Registered");
+    if(true){
         return next();
     }
-    res.redirect('/');
-}
-
-function isRegistered(){
-    return false;
 }
