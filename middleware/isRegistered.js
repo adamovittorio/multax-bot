@@ -13,17 +13,17 @@ function isRegistered(req, res, next) {
 }
 
 function requestIdBlock(){
-    var text =  "Per poter effettuare segnalazioni, è necessario verificarsi." + 
-                "Carica il  tuo documento di identità in questa chat";
+    var text =  "Per poter effettuare segnalazioni, è necessario verificarsi. " + 
+                "Cosa vuoi fare?";
     var btn1 = {
         "type": "show_block",
         "block_name": "Fronte upload",
-        "title": "Voglio Caricare il documento"
+        "title": "Caricare il documento"
     };
     var btn2 = {
         "type": "show_block",
         "block_name": "Default answer",
-        "title": "Ho cambiato idea"
+        "title": "Non mi interessa"
     }; 
     var block = {
         "messages": [{
