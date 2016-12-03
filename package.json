@@ -1,0 +1,22 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "multax bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "multax test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koop4/multax-bot.git"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "koop4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koop4/multax-bot/issues"
+  },
+  "homepage": "https://github.com/koop4/multax-bot#readme"
+}
