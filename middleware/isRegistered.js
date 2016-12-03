@@ -14,12 +14,17 @@ function isRegistered(req, res, next) {
 
 function requestIdBlock(){
     var text =  "Per poter effettuare segnalazioni, è necessario verificarsi." + 
-                "Carica le foto front e retro del  tuo documento di identità in questa chat";
+                "Carica il  tuo documento di identità in questa chat";
     var btn1 = {
         "type": "show_block",
-        "block_name": "Welcome Back",
-        "title": "Ho cambiato idea."
+        "block_name": "Fronte upload",
+        "title": "Voglio Caricare il documento"
     };
+    var btn2 = {
+        "type": "show_block",
+        "block_name": "Default answer",
+        "title": "Ho cambiato idea"
+    }; 
     var block = {
         "messages": [{
             "attachment": {
@@ -27,7 +32,7 @@ function requestIdBlock(){
                 "payload": {
                     "template_type": "button",
                     "text": text,
-                    "buttons": [ btn1 ]
+                    "buttons": [ btn1,btn2 ]
                 }
             }
         }]
