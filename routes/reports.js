@@ -4,7 +4,7 @@ module.exports = function (req, res) {
     var btn1 = {
         "type": "show_block",
         "block_name": "Divieto di sosta",
-        "title": "Show the block!"
+        "title": "Divieto di sosta"
     };
     var reports = {
         "messages": [{
