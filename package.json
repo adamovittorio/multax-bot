@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/koop4/multax-bot/issues"
   },
-  "homepage": "https://github.com/koop4/multax-bot#readme"
+  "homepage": "https://github.com/koop4/multax-bot#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
