@@ -1,6 +1,9 @@
-var express = require('express'),
-    router = express.Router();
+var router  = require('express').Router();
 
-router.get('/reports', require('./routes/reports.js'));
+//middleware
+var isRegistered = require('./middleware/isRegistered'),
+    isApproved = require('./middleware/isApproved');
+
+router.get('/reports', isRegistered, isApproved, require('./routes/reports.js'));
 
 module.exports = router;
