@@ -8,12 +8,12 @@ function isRegistered(req, res, next) {
         return next();
     } 
     else{
-        res.json(requestIdBlock());
+        res.json(registrationBlock());
     }  
 }
 
-function requestIdBlock(){
-    var text =  "Per poter effettuare segnalazioni, è necessario effettuare una breve registrazione. ".
+function registrationBlock(){
+    var text =  "Per poter effettuare segnalazioni, è necessario effettuare una breve registrazione. ";
     var btn1 = {
         "type": "show_block",
         "block_name": "Registrazione",
