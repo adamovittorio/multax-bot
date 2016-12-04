@@ -4,6 +4,6 @@ var router  = require('express').Router();
 var isRegistered = require('./middleware/isRegistered'),
     isApproved = require('./middleware/isApproved');
 
-router.get('/reports', isRegistered, isApproved, require('./routes/reports.js'));
+router.get('/reports', isRegistered, isApproved, require('./reports'));
 
 module.exports = router;
