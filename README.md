@@ -1,4 +1,8 @@
-# Requirements
-after cloning the application you will have to run the following comman:
+# Multax
 
-`npm install`
+### - Requirements
+
+- Install [nvm](https://github.com/creationix/nvm#installation)
+- Use the .nvmrc node version `nvm use`
+- Install yarn `npm i -g yarn`
+- Install dependencies `yarn`
