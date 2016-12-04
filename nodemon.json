@@ -1,0 +1,10 @@
+{
+  "ignore": [
+    "app/**/*.spec.js"
+  ],
+  "watch" : [
+    ".env",
+    "app/**/*",
+    "bin/**/*"
+  ]
+}
