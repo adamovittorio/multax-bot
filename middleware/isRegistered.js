@@ -13,12 +13,11 @@ function isRegistered(req, res, next) {
 }
 
 function requestIdBlock(){
-    var text =  "Per poter effettuare segnalazioni, è necessario verificarsi. " + 
-                "Cosa vuoi fare?";
+    var text =  "Per poter effettuare segnalazioni, è necessario effettuare una breve registrazione. ".
     var btn1 = {
         "type": "show_block",
-        "block_name": "Fronte upload",
-        "title": "Caricare il documento"
+        "block_name": "Registrazione",
+        "title": "Inizia la registrazione"
     };
     var btn2 = {
         "type": "show_block",
