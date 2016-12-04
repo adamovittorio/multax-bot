@@ -2,8 +2,9 @@
   "name": "bot",
   "version": "1.0.0",
   "description": "multax bot",
-  "main": "app.js",
+  "main": "bin/server",
   "scripts": {
+    "start": "node bin/server",
     "test": "multax test"
   },
   "repository": {
@@ -20,6 +21,10 @@
   },
   "homepage": "https://github.com/koop4/multax-bot#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "dotenv": "^2.0.0",
     "express": "^4.14.0"
   }
 }
