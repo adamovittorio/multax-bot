@@ -16,7 +16,9 @@ function idleBlock(){
     var text =  "La tua registrazione deve ancora essere validata."+
                 " Torna tra qualche ora per poter effetuare le segnalazioni.";
     var idleMsg = {
-        "messages": [ {"text": text} ]
+        "messages": [ 
+            {"text": text} 
+        ]
     };
-    res.json(idleMsg);
+    return idleMsg;
 }
