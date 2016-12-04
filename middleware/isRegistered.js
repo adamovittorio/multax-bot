@@ -3,8 +3,7 @@
 module.exports = isRegistered
 
 function isRegistered(req, res, next) {
-    console.log("Registered");
-    if(!true){
+    if(true){
         return next();
     } 
     else{
