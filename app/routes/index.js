@@ -1,9 +1,6 @@
-var router  = require('express').Router();
+const router = require('express').Router()
+const bot = require('./bot/v1')
 
-//middleware
-var isRegistered = require('../middleware/isRegistered'),
-    isApproved = require('../middleware/isApproved');
+router.use('/bot/v1/', bot)
 
-router.get('/reports', isRegistered, isApproved, require('./reports'));
-
-module.exports = router;
+module.exports = router
