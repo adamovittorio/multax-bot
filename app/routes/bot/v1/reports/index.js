@@ -1,12 +1,14 @@
 /** this routes give the user all the reports option: */
-module.exports = function (req, res) {
-    var title = "Cosa vuoi segnalare?";
-    var btn1 = {
+const router = require('express').Router()
+
+router.get('reports', function (req, res) {
+    const title = "Cosa vuoi segnalare?"
+    const btn1 = {
         "type": "show_block",
         "block_name": "Divieto di sosta",
         "title": "Divieto di sosta"
-    };
-    var reports = {
+    }
+    const reports = {
         "messages": [{
             "attachment": {
                 "type": "template",
@@ -17,6 +19,8 @@ module.exports = function (req, res) {
                 }
             }
         }]
-    };
-    res.json(reports);
-}
+    }
+    res.status(200).json(reports)
+})
+
+module.exports = router
