@@ -5,3 +5,5 @@ module.exports = {
   isApproved,
   isRegistered
 }
+
+// FIX ME: add error handler and logger for all requests, use boom!?!
